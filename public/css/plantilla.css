@@ -1,0 +1,140 @@
+body{
+            margin: 0px !important;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .fondoheader{
+        background-color: #6A7177;
+        max-width: 100%;
+        height: 100%;
+        }
+    	.container{
+    		max-width:1260px !important;
+    	}
+    	
+    	.nav-link{
+            color: #474747;
+            font-weight: 600;
+    		font-size: 11px;
+
+    	}
+
+        .bg-header{
+            background-color: #2C3238;
+        }
+    	.icono{
+
+    		color: white;
+    		font-size: 11px;
+    		padding: 6px 5px 5px 5px;
+    		line-height: unset !important;
+
+    	}
+        .linea::before{
+            
+            
+            
+        }
+
+    	.input-group{
+
+    		padding-left: 550px;
+    	}
+    	.enlace{
+    		color: white;
+            font-size: 13px;
+    		
+    	}
+
+    	.enlace:hover{
+    		color: rgba(0,0,0,.7);
+    		text-decoration: none;
+    	}
+
+    	.enlace1 a{
+    		color: rgba(0,0,0,.5);
+    	}
+    	.enlace1 a:hover{
+    		text-decoration: none;
+
+    	}
+
+    	.ml-6{
+
+    		padding-left: 100px;
+    		padding-right: 0 !important;
+    	}
+    	.enlace2 i{
+
+    		color: green;
+    		font-size: 24px;
+
+    	}
+
+    	.enlace2 a{
+    		text-decoration: none;
+    		color: rgba(0,0,0,.5);
+
+    }
+
+    /*footer*/
+    
+    .fondofooter{
+        background-color: #8BCD01;
+        height: 40px;
+    }
+    .circulo i{
+        border-radius: 50%;
+        border: 1x solid grey;
+        padding: 10px;
+
+    }
+    .fondofooterseccion{
+        background-color: #E3E5E6;
+       
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+        
+    }
+    .letra{
+        font-weight: 800;
+        font-size:15px;
+    }
+    .letraenlace{
+        color: #777878;
+        font-size: 12px;
+    }
+    .letraenlace:hover{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .letrafooter:hover{
+        color:black;
+    }
+
+    .newsletter{
+        border-radius: 10px;
+        
+    }
+
+    .input-group-text{
+        background-color: #484E91 !important;
+    }
+    .iconofooter{
+        
+        
+    }
+    .fondofooter2{
+        background-color: #484E91;
+        height: 55px;
+    }
+    .circulo i{
+        border-radius: 50%;
+        border: 1x solid grey;
+        padding: 10px
+
+    }
