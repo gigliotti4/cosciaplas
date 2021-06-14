@@ -43,7 +43,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" 
             href="{{route('home')}}">
-                <img src="{{asset('img/anclajes.png')}}" alt="" class="w-50">
+                <img src="{{asset('img/cosciaplas.png')}}" alt="" class="w-100">
             </a>
 
             <!-- Divider -->
@@ -83,8 +83,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         
-                         {{-- <a class="collapse-item" href="{{route('slider', 'empresa')}}">Slider</a>
-                         <a class="collapse-item" href="{{route('editarcontenido', ['empresa',1])}}">Contenido</a> --}}
+                          <a class="collapse-item" href="{{route('slider', 'empresa')}}">Slider</a>
+                         <a class="collapse-item" href="{{route('editarcontenido', 1)}}">Editar Contenido</a>
                        
                     </div>
                 </div>

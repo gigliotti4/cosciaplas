@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\adm;
+use App\Http\Controllers\Controller;
 
 use App\Models\Contenido;
 use Illuminate\Http\Request;
@@ -74,7 +75,7 @@ class ContenidoController extends Controller
         $contenido->textizq     = $request->textizq;
         $contenido->textder     = $request->textder;
         $contenido->save();
-        return redirect()->route('editarcontenido', 'id'=>$id)->with('success', "Registro actualizado exitósamente" );
+        return redirect()->route('editarcontenido', ['id'=>$id])->with('success', "Registro actualizado exitósamente" );
     }
 
     /**

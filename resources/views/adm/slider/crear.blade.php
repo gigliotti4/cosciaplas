@@ -1,7 +1,7 @@
 @extends('adm.layouts')
 
 @section('content')
-
+<h3>Nuevo Slider</h3>
 <form method="post" action="{{route('crearslider', $seccion)}}" enctype="multipart/form-data">
 	@csrf
   <div class="form-group">
@@ -10,26 +10,26 @@
     
   </div>
   
-  <div class="form-group">
+  {{-- <div class="form-group">
     <label for="descripcion">descripcion</label>
     <input type="text" class="form-control" id="descripcion" name="descripcion">
-  </div>
+  </div> --}}
   <div class="form-group">
     <label for="imagen">Imagen</label>
     <input type="file" class="form-control-file" required id="imagen" name="imagen">
   </div>
   <div class="form-group">
-    <label for="descripcionLarga">Contenido</label>
-    <textarea class="form-control" name="descripcionLarga" id="descripcionLarga" cols="30" rows="10" value="" ></textarea>
+    <label for="descripcion">Contenido</label>
+    <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" value="" ></textarea>
     
-  </div>
+  </div> 
 
 
 
  <button type="submit" class="btn btn-success">Agregar</button>
 </form>
 @endsection
-@section('js')
+ @section('js')
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <script>
         $(document).ready(function() {
@@ -48,6 +48,6 @@
              });
          });
     
-</script>
+</script> 
 
 @endsection

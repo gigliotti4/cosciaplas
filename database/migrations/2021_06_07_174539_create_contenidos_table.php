@@ -15,8 +15,8 @@ class CreateContenidosTable extends Migration
     {
         Schema::create('contenidos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('textizq')->nullable();
-            $table->string('textder')->nullable(); 
+            $table->text('textizq')->nullable();
+            $table->text('textder')->nullable(); 
             $table->timestamps();
         });
     }

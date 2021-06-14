@@ -1,7 +1,12 @@
 @extends('adm.layouts')
 
 @section('content')
- <a href="{{route('nuevoslider', [ 'seccion' => $seccion ])}}" class="btn btn-success mb-5" >Nuevo slider</a> 
+<div class="d-flex justify-content-end ">
+
+  <a href="{{route('nuevoslider', [ 'seccion' => $seccion ])}}" class="btn btn-success rounded-pill mb-5  " >
+   <i class="fas fa-plus"></i>
+ </a> 
+</div>
 
 @if(session()->has('success'))
     <div class="alert alert-success">
@@ -22,11 +27,15 @@
   	@foreach($slider as $s)
 	    <tr>
 	      <th scope="row">{{$s->orden}}</th>
-	      <td scope="row"><img src="{{asset(Storage::url($s->imagen))}}" class="img-thumbnail"></td>
-	      <td>{{$s->descripcion}}</td>
+	      <td scope="row"><img src="{{asset(Storage::url($s->imagen))}}" class="img-thumbnail w-50"></td>
+	      <td>{!!$s->descripcion!!}</td>
 	      <td>
-	      	<a class="btn btn-warning" href="{{route('editslider',[$seccion,'id'=>$s->id])}}" role="button">edit</a>
-	      	<a class="btn btn-danger" href="{{route('eliminarslider',$s->id)}}" role="button">borrar</a>
+	      	<a class="btn btn-warning rounded-pill" href="{{route('editslider',[$seccion,'id'=>$s->id])}}" role="button">
+            <i class="fas fa-edit"></i>
+          </a>
+	      	<a class="btn btn-danger rounded-pill" href="{{route('eliminarslider',$s->id)}}" role="button">
+            <i class="far fa-trash-alt"></i>
+          </a>
 
 	      </td>
 	    </tr>

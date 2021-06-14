@@ -41,7 +41,7 @@ class SliderController extends Controller
         $slider = new Slider;
         $slider->orden = $request->orden;
         $slider->descripcion = $request->descripcion;
-        $slider->descripcionLarga = $request->descripcionLarga;
+        
         $slider->seccion = $seccion;
         $slider->imagen = $request->file('imagen')->store('public/sliders');
         $slider->save();
@@ -94,7 +94,6 @@ class SliderController extends Controller
         }
 
         $slider->descripcion = $request->descripcion;
-        $slider->descripcionLarga = $request->descripcionLarga;
         $slider->imagen    = $path;
         $slider->seccion   = $seccion;
         $slider->orden     = $request->orden;

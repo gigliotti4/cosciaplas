@@ -31,4 +31,8 @@ Route::get('/adm/sliders/edit/{seccion}/{id}','adm\SliderController@edit')->name
 Route::put('/adm/sliders/update/{seccion}/{id}', 'adm\SliderController@update')->name('updateslider');
 Route::get('/adm/sliders/eliminar/{id}', 'adm\SliderController@destroy')->name('eliminarslider');
 
+
+Route::get('/adm/contenido/edit/{id}', 'adm\ContenidoController@edit')->name('editarcontenido');
+Route::put('/adm/contenido/update/{id}', 'adm\ContenidoController@update')->name('updatecontenido');
+
 });
