@@ -85,6 +85,7 @@
                         
                           <a class="collapse-item" href="{{route('slider', 'empresa')}}">Slider</a>
                          <a class="collapse-item" href="{{route('editarcontenido', 1)}}">Editar Contenido</a>
+                         <a class="collapse-item" href="{{route('icono')}}">Icono</a>
                        
                     </div>
                 </div>
@@ -101,10 +102,11 @@
                     <span>Producos</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">  
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{route('productos')}}">Crear productos</a>  
                         {{-- <a class="collapse-item" href="{{route('slider', 'encofrado')}}">Slider</a>
                         <a class="collapse-item" href="{{route('editarcontenido', ['encofrado',2])}}">Contenido</a>
-                        <a class="collapse-item" href="{{route('planos')}}">Planos</a>
+                        
                         <a class="collapse-item" href="{{route('productos')}}">Producto</a> --}}
                         
                        
@@ -122,6 +124,7 @@
                 </a>
                 <div id="collapseapp" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded"> 
+                        <a class="collapse-item" href="{{route('aplicaciones')}}">Crear Aplicaciones</a>
                         {{-- <a class="collapse-item" href="{{route('slider', 'suelo')}}">Slider</a>
                         <a class="collapse-item" href="{{route('editarcontenido', ['suelo',3])}}">Contenido</a>
                         <a class="collapse-item" href="{{route('elementos')}}">Elementos</a>
@@ -140,12 +143,12 @@
                 </a>
                 <div id="collapsehormigon" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded"> 
-                        {{-- <a class="collapse-item" href="{{route('slider', 'hormigon')}}">Slider</a>
-                        <a class="collapse-item" href="{{route('editarcontenido', ['hormigon',4])}}">Contenido</a>
+                         <a class="collapse-item" href="{{route('slider', 'cartacolores')}}">Slider</a>
+                        {{--<a class="collapse-item" href="{{route('editarcontenido', ['hormigon',4])}}">Contenido</a>
                         
                         <a class="collapse-item" href="{{route('accesorios')}}">accesorios</a> --}}
-                        {{-- <a class="collapse-item" href="{{route('familia')}}">Familia</a>
-                         <a class="collapse-item" href="{{route('colores')}}">Colores</a> --}}
+                        {{-- <a class="collapse-item" href="{{route('familia')}}">Familia</a>--}}
+                         <a class="collapse-item" href="{{route('colores')}}">Colores</a> 
                             
                     </div>
                 </div>

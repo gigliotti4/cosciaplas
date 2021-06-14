@@ -4,7 +4,7 @@
 <h3>Nuevo Slider</h3>
 <form method="post" action="{{route('crearslider', $seccion)}}" enctype="multipart/form-data">
 	@csrf
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="orden">orden</label>
     <input type="text" class="form-control" id="orden" name="orden" >
     
@@ -14,11 +14,11 @@
     <label for="descripcion">descripcion</label>
     <input type="text" class="form-control" id="descripcion" name="descripcion">
   </div> --}}
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="imagen">Imagen</label>
     <input type="file" class="form-control-file" required id="imagen" name="imagen">
   </div>
-  <div class="form-group">
+  <div class="form-group col-md-8">
     <label for="descripcion">Contenido</label>
     <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" value="" ></textarea>
     
@@ -36,15 +36,16 @@
              $('textarea').summernote({
                 
                  height: 250,
-                     fontNames: ['Montserrat-Bold', 'Montserrat-Light', 'Montserrat-Medium', 'Montserrat-Regular', 'Montserrat-SemiBold', 'Roboto-Regular'],
-                     toolbar: [
-                     ['style', ['style']],
-                     ['font', ['bold', 'underline', 'clear']],
-                     ['fontNames', ['fontname']],
-                     ['color', ['color']],
-                     ['para', ['ul', 'ol', 'paragraph']]
+                     fontNames: ['Montserrat', 'Comic Sans MS'],
+                     fontNamesIgnoreCheck: ['Arial', 'Segoe UI']
+                    //  toolbar: [
+                    //  ['style', ['style']],
+                    //  ['font', ['bold', 'underline', 'clear']],
+                    // // ['fontNames', ['fontname']],
+                    //  ['color', ['color']],
+                    //  ['para', ['ul', 'ol', 'paragraph']]
                      
-                     ]
+                    //  ]
              });
          });
     

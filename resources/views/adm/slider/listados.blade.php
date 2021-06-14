@@ -3,7 +3,7 @@
 @section('content')
 <div class="d-flex justify-content-end ">
 
-  <a href="{{route('nuevoslider', [ 'seccion' => $seccion ])}}" class="btn btn-success rounded-pill mb-5  " >
+  <a href="{{route('nuevoslider', [ 'seccion' => $seccion ])}}" class="btn btn-success rounded-pill" >
    <i class="fas fa-plus"></i>
  </a> 
 </div>
