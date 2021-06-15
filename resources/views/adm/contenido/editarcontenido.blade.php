@@ -33,8 +33,8 @@
          $('textarea').summernote({
             
              height: 250,
-                 fontNames: ['Montserrat', 'Comic Sans MS'],
-                 fontNamesIgnoreCheck: ['Arial', 'Segoe UI']
+                 fontNames: ['Montserrat'],
+                 fontNamesIgnoreCheck: ['Segoe UI']
                 //  toolbar: [
                 //  ['style', ['style']],
                 //  ['font', ['bold', 'underline', 'clear']],

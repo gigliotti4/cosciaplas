@@ -12,7 +12,8 @@
   
   <div class="form-group col-md-8">
     <label for="descripcion">Descripcion</label>
-    <input type="text" class="form-control" id="descripcion" name="descripcion" value="{{$slider->descripcion}}">
+    
+    <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" value="{{$slider->descripcion}}" >{!!$slider->descripcion!!}</textarea>
   </div>
   <div class="form-group">
     <label for="imagen">Imagen</label>

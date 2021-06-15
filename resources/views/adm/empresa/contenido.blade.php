@@ -26,7 +26,7 @@
          @foreach($contenido as $c)
       <tr>
         <th scope="row">{{$c->orden}}</th>
-        <th scope="row">{{$c->titulo}}</th>
+        <th scope="row">{{$c->nombre}}</th>
         
       <td>
         <a class="btn btn-warning rounded-pill" href="{{route('editaricono', $c->id)}}" role="button">

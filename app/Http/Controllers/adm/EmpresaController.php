@@ -34,7 +34,7 @@ class EmpresaController extends Controller
         $icono->save();
 
 
-        return redirect()->route('icono')->with('success', 'El slider fue creado');
+        return redirect()->route('icono')->with('success', 'El Icono fue creado');
      
     }
     
@@ -47,7 +47,7 @@ class EmpresaController extends Controller
     public function edit($id)
     {   $contenido = Empresa::find($id);
        // $inicio = Inicio::all();
-        return view('adm.empresa.editar', compact('contenido'));
+        return view('adm.empresa.editaricono', compact('contenido'));
     }
 
     /**
@@ -76,9 +76,9 @@ class EmpresaController extends Controller
            
     
         
-        $contenido->titulo = $request->titulo;
+        $contenido->nombre = $request->nombre;
         $contenido->save();
-        return redirect()->route('contenido')->with('success', "Registro actualizado exitósamente" );
+        return redirect()->route('icono')->with('success', "Registro actualizado exitósamente" );
     }
 
 

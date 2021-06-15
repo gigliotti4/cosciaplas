@@ -164,9 +164,9 @@
                 </a>
                 <div id="collapsecontacto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded"> 
-                         {{-- <a class="collapse-item" href="{{route('contacto')}}">Editar Contacto</a>
+                          <a class="collapse-item" href="{{route('contacto')}}">Editar Contacto</a>
                         <a class="collapse-item" href="{{route('editarredes', 1)}}">Editar Redes sociales</a>
-                        <a class="collapse-item" href="{{route('logos')}}">Editar logos</a>    --}}
+                        <a class="collapse-item" href="{{route('logos')}}">Editar logos</a>   
                     </div>
                 </div>
                

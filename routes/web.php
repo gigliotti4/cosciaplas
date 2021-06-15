@@ -13,15 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 //Auth::routes(['register' => false]);
 Auth::routes();
 
-Route::get('/adm', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/adm', [App\Http\Controllers\adm\AdmController::class, 'index'])->name('home');
+Route::get('/adm', 'adm\AdmController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function() {
 Route::get('/adm/sliders/{seccion}', 'adm\SliderController@index')->name('slider');
@@ -67,5 +68,33 @@ Route::get('adm/productos/eliminar/{id}', 'adm\ProductoController@destroy')->nam
 		Route::put('colores/update/{id}', 'adm\ColoreController@update')->name('updatecolores');
 		Route::get('colores/eliminar/{id}', 'adm\coloreController@destroy')->name('eliminarcolores');
 
+			//contacto	
+	Route::get('adm/contacto', 'adm\ContactosController@index')->name('contacto');
+	Route::get('adm/contacto/edit/{id}', 'adm\ContactosController@edit')->name('editarcontacto');
+	Route::put('adm/contacto/update/{id}', 'adm\ContactosController@update')->name('updatecontacto');
+
+	//logos
+	Route::get('logos', 'adm\LogosController@index')->name('logos');
+	Route::get('logos/edit/{id}', 'adm\LogosController@edit')->name('editarlogos');
+	Route::put('logos/update/{id}', 'adm\LogosController@update')->name('updatelogos');
+
+
+	//Redes
+	Route::get('redes', 'adm\redesController@index')->name('redes');
+	Route::get('redes/edit/{id}', 'adm\RedesController@edit')->name('editarredes');
+	Route::put('redes/update/{id}', 'adm\RedesController@update')->name('updateredes');
+
+
+	//Subcriptores
+	// Route::get('Subcriptores', 'adm\SubcriptoresController@verSubcriptores')->name('Subcriptores.view');
+	// Route::get('home/subscriptores/crearMail','adm\SubcriptoresController@create')->name('subcriptores.create');
+	// Route::post('home/subscriptores/enviarMail','adm\SubcriptoresController@store')->name('subcriptores.store');
+	// Route::get('Subcriptores/edit/{id}', 'adm\SubcriptoresController@edit')->name('subscriptores.editar');
+	// Route::put('Subcriptores/update/{id}', 'adm\SubcriptoresController@update')->name('updateSubcriptores');
+
 
 });
+
+
+Route::get('/', 'PageController@index')->name('page.inicio');
+Route::get('/empresa', 'PageController@empresa')->name('page.empresa');

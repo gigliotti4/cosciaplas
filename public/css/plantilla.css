@@ -2,6 +2,10 @@ body{
             margin: 0px !important;
             font-family: 'Montserrat', sans-serif;
         }
+        .fondo{
+            background-color: #1F3579;
+            height: 30px;
+        }
         
         .fondoheader{
         background-color: #6A7177;
@@ -25,13 +29,14 @@ body{
     	.icono{
 
     		color: white;
-    		font-size: 11px;
+    		font-size: 13px;
     		padding: 6px 5px 5px 5px;
     		line-height: unset !important;
 
     	}
         .linea::before{
-            
+            content: "|";
+            color: white;
             
             
         }
@@ -90,7 +95,7 @@ body{
 
     }
     .fondofooterseccion{
-        background-color: #E3E5E6;
+        background-color: #1F3579;
        
         background-position: center;
         background-size: contain;
@@ -117,19 +122,19 @@ body{
     }
 
     .newsletter{
-        border-radius: 10px;
+        border-radius: 20px;
         
     }
 
     .input-group-text{
-        background-color: #484E91 !important;
+        background-color: #A2A8B2 !important;
     }
     .iconofooter{
         
-        
+        font-size: 13px;;
     }
     .fondofooter2{
-        background-color: #484E91;
+        background-color: #A2A8B2;
         height: 55px;
     }
     .circulo i{
