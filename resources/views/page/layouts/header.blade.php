@@ -80,11 +80,10 @@
 
                             </div>  
                             <a class="nav-item nav-link mx-2 {{ $active == 'page.empresa' ? 'active' : ''}}" href="{{route('page.empresa')}}">EMPRESA</a>
-                                 <a class="nav-item nav-link mx-2 {{$active == 'page.productos' ? 'active' : ''}}" href="">PRODUCTOS</a>
-                                 <a class="nav-item nav-link mx-2 {{$active == 'page.aplicaciones' ? 'active' : ''}}" href="">APLICACIONES</a>
-                                 <a class="nav-item nav-link mx-2 {{$active == 'page.cartacolores' ? 'active' : ''}}" href="">CARTA DE COLORES</a>
+                                 <a class="nav-item nav-link mx-2 {{$active == 'page.productos' ? 'active' : ''}}" href="{{route('page.productos')}}">PRODUCTOS</a>
+                                 <a class="nav-item nav-link mx-2 {{$active == 'page.aplicaciones' ? 'active' : ''}}" href="{{route('page.aplicaciones')}}">APLICACIONES</a>
+                                 <a class="nav-item nav-link mx-2 {{$active == 'page.cartacolores' ? 'active' : ''}}" href="{{route('page.colores')}}">CARTA DE COLORES</a>
                                  <a class="nav-item nav-link mx-2 {{$active == 'page.solicitud' ? 'active' : ''}}" href="">SOLICITUD DE PRESUPUESTO</a>
-                                 <a class="nav-item nav-link mx-2 {{$active == 'page.representantes' ? 'active' : ''}}" href="">REPRESENTANTES</a>
                                  <a class="nav-item nav-link mx-2 {{$active == 'page.contactos' ? 'active' : ''}}" href="">CONTACTO</a>
                                 
                             </div>

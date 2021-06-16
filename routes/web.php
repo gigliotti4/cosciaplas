@@ -61,12 +61,12 @@ Route::get('adm/productos/eliminar/{id}', 'adm\ProductoController@destroy')->nam
 	Route::get('adm/aplicaciones/eliminar/{id}', 'adm\AplicacionesController@destroy')->name('eliminaraplicacion');
 
 		//colores
-		Route::get('colores', 'adm\ColoreController@index')->name('colores');
-		Route::get('colores/create', 'adm\ColoreController@create')->name('nuevocolores');
-		Route::post('colores/create', 'adm\ColoreController@store')->name('crearcolores');
-		Route::get('colores/edit/{id}', 'adm\ColoreController@edit')->name('editarcolores');
-		Route::put('colores/update/{id}', 'adm\ColoreController@update')->name('updatecolores');
-		Route::get('colores/eliminar/{id}', 'adm\coloreController@destroy')->name('eliminarcolores');
+		Route::get('adm/colores', 'adm\ColoreController@index')->name('colores');
+		Route::get('adm/colores/create', 'adm\ColoreController@create')->name('nuevocolores');
+		Route::post('adm/colores/create', 'adm\ColoreController@store')->name('crearcolores');
+		Route::get('adm/colores/edit/{id}', 'adm\ColoreController@edit')->name('editarcolores');
+		Route::put('adm/colores/update/{id}', 'adm\ColoreController@update')->name('updatecolores');
+		Route::get('adm/colores/eliminar/{id}', 'adm\coloreController@destroy')->name('eliminarcolores');
 
 			//contacto	
 	Route::get('adm/contacto', 'adm\ContactosController@index')->name('contacto');
@@ -98,3 +98,7 @@ Route::get('adm/productos/eliminar/{id}', 'adm\ProductoController@destroy')->nam
 
 Route::get('/', 'PageController@index')->name('page.inicio');
 Route::get('/empresa', 'PageController@empresa')->name('page.empresa');
+Route::get('/productos', 'PageController@productos')->name('page.productos');
+Route::get('/producto/{id}', 'PageController@producto')->name('page.producto');
+Route::get('/aplicaciones', 'PageController@aplicaciones')->name('page.aplicaciones');
+Route::get('/colores', 'PageController@colores')->name('page.colores');

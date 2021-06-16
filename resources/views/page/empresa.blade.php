@@ -5,17 +5,30 @@
 @section('content')
 
 <style>
-    .icono{
-        max-width: 80px;
+    .iconogrande{
+    max-width: 80px;
     min-width: 80px;
     min-height: 80px;
     max-height: 80px;
     border-radius:50%;
     
 }
+.fondodelcoso{
+        background-color: #F2F2F2;
+        height: 25px;
+    }
     
 
 </style>
+<div class="fondodelcoso">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="">
+                <span class="mt-1" style="font-size: 13px;">INICIO | EMPRESA</span>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         @foreach ($sliders as $slider)
@@ -70,11 +83,11 @@
         @foreach ($contenido as $c)
             
         <div class="col-md-6 mt-4 p-2">
-        <span style="color:#1F3579; font-size:16px; " class="my-2">COMPROMISO</span> 
+        <span style="color:#1F3579; font-size:16px; " class="my-2">COMPROMISO</span> <br>
             <span style="font-size:13px; color:#666666; font-family:'Montserrat', light;">{!!$c->textizq!!}</span>
         </div>
         <div class="col-md-6 mt-4 p-2">
-            <span style="color:#1F3579; font-size:16px; " class="my-2">MOTIVACIÓN</span> 
+            <span style="color:#1F3579; font-size:16px; " class="my-2">MOTIVACIÓN</span> <br>
             <span style="font-size:13px; color:#666666 !important; font-family:'Montserrat', light;" class="mb-4">{!!$c->textder!!}</span>
         </div>
         @endforeach
@@ -90,8 +103,8 @@
                 @foreach($empresa as $e)
             
                  <div class="col-md-4 d-flex justify-content-center align-items-center my-4">
-                    <div class="bg-white icono">
-                        <img src="{{asset(Storage::url($e->icono))}}" alt="" class="img-fluid d-block mx-auto pt-1" >
+                    <div class="bg-white iconogrande">
+                        <img src="{{asset(Storage::url($e->icono))}}" alt="" class="img-fluid d-block mx-auto pt-3" >
                     </div>
                     <span style="color:#1F3579; font-size:14px; " class="mx-2 align-self-center text-uppercase">{!!$e->nombre!!}</span>
                 </div> 

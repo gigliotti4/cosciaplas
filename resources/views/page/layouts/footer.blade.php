@@ -31,7 +31,9 @@
 				<span class="letra  " style="font-size:15px ; color:#A2A8B2">SECCIONES</span>
 				<div class="row">
 					<div class="col">	
-						
+						<a href="{{route('page.empresa')}}" class="letraenlace">Empresa</a><br>
+						<a href="{{route('page.productos')}}" class="letraenlace">Productos</a><br>
+						<a href="{{route('page.aplicaciones')}}" class="letraenlace">Aplicaciones</a><br>
 					</div>		
 				</div>	
 			</div>

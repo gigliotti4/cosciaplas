@@ -94,10 +94,10 @@ class AplicacionesController extends Controller
         $aplicaciones = Aplicacione::find($id);
         if ($request->hasFile('imagen'))
         {
-            Storage::delete($productos->imagen);
+            Storage::delete($aplicaciones->imagen);
             $path = $request->file('imagen')->store('public/imagen');
         }else{
-            $path = $productos->imagen;
+            $path = $aplicaciones->imagen;
         }
         $aplicaciones->nombre = $request->nombre;
         $aplicaciones->imagen    = $path;

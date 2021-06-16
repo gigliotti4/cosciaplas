@@ -25,8 +25,21 @@
 .boton_grey:hover{
     text-decoration:none;
 }
+.fondodelcoso{
+        background-color: #F2F2F2;
+        height: 25px;
+    }
 
 </style>
+<div class="fondodelcoso">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="">
+                <span class="mt-1" style="font-size: 13px;">INICIO</span>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             @foreach ($sliders as $slider)

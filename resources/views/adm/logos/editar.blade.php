@@ -8,7 +8,7 @@
   <div class="form-group">
     <label for="imagen">Logo</label>
     <input type="file" class="form-control-file" id="imagen" name="imagen" value="">
-    <img src="{{asset(Storage::url($logos->imagensup))}}" class="img-thumbnail mt-4">
+    <img src="{{asset(Storage::url($logos->imagen))}}" class="img-thumbnail mt-4">
   </div>
   
  
